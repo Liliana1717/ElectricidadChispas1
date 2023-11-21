@@ -1,17 +1,47 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.concurrent.Callable;
+
 public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main(String[] args){
+        Autonomo at = new Autonomo();
+          at.setCodigoCliente("339T");
+          at.setNombre("Juan");
+          at.setApellidos("Calabaza pereira");
+          at.setDni("777989C");
+          at.setEmail(" juancp@gmail.com");
+          at.setDireccionPostal("00552");
+          at.setPoblacion("Avila");
+         at.setProvincia("Avila");
+         at.setTelefono("677 9879 98");
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
 
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+         Sociedades sds = new Sociedades();
+         sds. setRazonSocial("Luciernagas");
+         sds.setCif("B-99889");
+         sds.setCodigoCliente("789Z");
+         sds.setEmail(" luciernagas.es@gmail.com");
+         sds.setDireccionPostal(" 05006");
+         sds.setPoblacion("Alcala de Henares");
+         sds.setProvincia(" Madrid");
+         sds.setTelefono(" 920998877");
+
+         Producto producto = new Producto();
+         producto.setNombre("interruptores automaticos");
+         producto.setCodigoProducto("0655T");
+         producto.setMarca("Hager");
+         producto.setModelo("serie Mu");
+         producto.setPrecio("1600€");
+         producto.setTipoIva(0.21);
+
+         Factura factura = new Factura();
+         factura.setCodigoFactura("900");
+         factura.setFechaFactura("20/11/2023");
+         factura.setNombreCliente("Juan Calabaza Pereira");
+         factura.setNifCliente("777989C");
+         factura.setPoblacionCliente("avila");
+         factura.setProvinciaCliente("Avila");
+         factura.setBaseImponible("4,76");
+         factura.setTotal("104,76");
+
+            }
         }
-    }
-}
+
