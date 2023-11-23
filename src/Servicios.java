@@ -1,17 +1,9 @@
-public class Servicios {
+public class Servicios extends Clientes {
 
-    private String codigoProducto;
+
     private String nombre;
-    private String precio;
+    private Double precio;
     private Double tipoIva;
-
-    public String getCodigoProducto() {
-        return codigoProducto;
-    }
-
-    public void setCodigoProducto(String codigoProducto) {
-        this.codigoProducto = codigoProducto;
-    }
 
     public String getNombre() {
         return nombre;
@@ -21,11 +13,11 @@ public class Servicios {
         this.nombre = nombre;
     }
 
-    public String getPrecio() {
+    public Double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(String precio) {
+    public void setPrecio(Double precio) {
         this.precio = precio;
     }
 
